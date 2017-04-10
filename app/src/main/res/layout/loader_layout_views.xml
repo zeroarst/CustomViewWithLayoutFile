@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <LinearLayout
+        android:id="@+id/lo_loading_msg_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_loader_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:visibility="invisible"
+            tools:text="This is the message body"
+            tools:visibility="visible" />
+
+        <lab.zeroarst.android.customviewwithlayout.LoadingImageView
+            android:id="@+id/iv_loader_img"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:visibility="invisible"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/loader_btn"
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            tools:text="retry"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+</merge>
